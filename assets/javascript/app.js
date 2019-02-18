@@ -57,7 +57,7 @@ function pushDisplay(){
     //generate random question
     var randomQuestion= options[randomNumber];
     console.log(randomQuestion);
-    $("#questionField").html("<p>" + randomQuestion + "</p>");
+    $("#questionField").html("<p>" + randomQuestion.question + "</p>");
     
     for(var i = 0; i < randomQuestion.multipleChoice.length; i++) {
         var userChoice = $("<div>");
